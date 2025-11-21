@@ -91,11 +91,11 @@ ALL_BUCKETS = sorted(set(v["bucket"] for v in AWARDS.values()))
 # STAT LEADER UPS
 
 LEADER_UPS = {
-    "Scoring Leader": 1,
-    "Rebounding Leader": 1,
-    "Assists Leader": 1,
-    "Steals Leader": 1,
-    "Blocks Leader": 1,
+    "Scoring Leader": 0,
+    "Rebounding Leader": 0,
+    "Assists Leader": 0,
+    "Steals Leader": 0,
+    "Blocks Leader": 0,
 }
 
 def map_award_type(text):
@@ -248,4 +248,5 @@ print(f"TOTAL AI UPS: {ai_total}")
 print("\n==============================")
 print(f"TOTAL LEAGUE UPS: {cap_total + ai_total}")
 print("==============================\n")
+
 
