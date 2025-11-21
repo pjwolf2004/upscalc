@@ -52,37 +52,37 @@ AWARDS = {
     "Most Valuable Player":            {"bucket": "MVP",            "ups": 3},
     "Defensive Player of the Year":    {"bucket": "DPOY",           "ups": 3},
     "Rookie of the Year":              {"bucket": "ROTY",           "ups": 2},
-    "Sixth Man of the Year":           {"bucket": "SMOY",           "ups": 1},
+    "Sixth Man of the Year":           {"bucket": "SMOY",           "ups": 2},
 
     # MIP safety (BBGM sometimes changes text)
-    "Most Improved Player":            {"bucket": "MIP",            "ups": 1},
-    "Most Improved":                   {"bucket": "MIP",            "ups": 1},
+    "Most Improved Player":            {"bucket": "MIP",            "ups": 2},
+    "Most Improved":                   {"bucket": "MIP",            "ups": 2},
 
     # Playoffs
-    "Finals MVP":                      {"bucket": "FMVP",           "ups": 1},
-    "Semifinals MVP":                  {"bucket": "SFMVP",          "ups": 1},
-    "Conference Finals MVP":           {"bucket": "SFMVP",          "ups": 1},
+    "Finals MVP":                      {"bucket": "FMVP",           "ups": 2},
+    "Semifinals MVP":                  {"bucket": "SFMVP",          "ups": 0},
+    "Conference Finals MVP":           {"bucket": "SFMVP",          "ups": 0},
 
     # All-League
-    "First Team All-League":           {"bucket": "All-League",     "ups": 2},
+    "First Team All-League":           {"bucket": "All-League",     "ups": 3},
     "Second Team All-League":          {"bucket": "All-League",     "ups": 2},
-    "Third Team All-League":           {"bucket": "All-League",     "ups": 2},
+    "Third Team All-League":           {"bucket": "All-League",     "ups": 1},
 
     # All-Defensive
-    "First Team All-Defensive":        {"bucket": "All-Defensive",  "ups": 2},
+    "First Team All-Defensive":        {"bucket": "All-Defensive",  "ups": 3},
     "Second Team All-Defensive":       {"bucket": "All-Defensive",  "ups": 2},
-    "Third Team All-Defensive":        {"bucket": "All-Defensive",  "ups": 2},
+    "Third Team All-Defensive":        {"bucket": "All-Defensive",  "ups": 1},
 
     # All-Star
-    "All-Star":                        {"bucket": "All-Star",       "ups": 1},
-    "All-Star MVP":                    {"bucket": "All-Star MVP",   "ups": 2},
-    "All-Star Game MVP":               {"bucket": "All-Star MVP",   "ups": 2},
+    "All-Star":                        {"bucket": "All-Star",       "ups": 2},
+    "All-Star MVP":                    {"bucket": "All-Star MVP",   "ups": 0},
+    "All-Star Game MVP":               {"bucket": "All-Star MVP",   "ups": 0},
 
     # Rookies
     "All-Rookie Team":                 {"bucket": "All-Rookie",     "ups": 1},
 
     # Championship
-    "Won Championship":                {"bucket": "Champion",       "ups": 1},
+    "Won Championship":                {"bucket": "Champion",       "ups": 3},
 }
 
 ALL_BUCKETS = sorted(set(v["bucket"] for v in AWARDS.values()))
@@ -248,3 +248,4 @@ print(f"TOTAL AI UPS: {ai_total}")
 print("\n==============================")
 print(f"TOTAL LEAGUE UPS: {cap_total + ai_total}")
 print("==============================\n")
+
